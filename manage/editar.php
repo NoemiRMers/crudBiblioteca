@@ -17,15 +17,15 @@
                 <form action="update.php" method="POST">
                     <div class="mb-3">
                     <label>TITULO</label>
-                    <input class="form-control" type="text" name="inputTitulo" value=<?php echo $libro->titulo ?>
+                    <input class="form-control" type="text" name="inputTitulo" value="<?php echo $libro->titulo ?>">
                     </div>
                     <div class="mb-3">
                     <label>AUTOR</label>
-                    <input class="form-control" type="text" name="inputAutor" value=<?php echo $libro->autor ?>>
+                    <input class="form-control" type="text" name="inputAutor" value="<?php echo $libro->autor ?>">
                     </div> 
                     <div class="mb-3">
                     <label>GENERO</label>
-                    <input class="form-control" type="text" name="inputGenero" value=<?php echo $libro->genero ?>>
+                    <input class="form-control" type="text" name="inputGenero" value="<?php echo $libro->genero ?>"">
                     </div>
                     <input type="hidden" name="inputIsbn" value=<?php echo $libro->isbn ?>/>
                     <input type="submit" class="btn btn-info" value="Guardar"/>

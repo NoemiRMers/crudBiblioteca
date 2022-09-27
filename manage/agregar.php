@@ -8,7 +8,7 @@
         <form action="registrar.php" method="POST">
             <div class="mb-3">
             <label>ISBN</label>
-            <input class="form-control" type="text" placeholder="ingrese No. de ISBN" autofocus name="inputIsbn">
+            <input class="form-control" type="text" pattern= "[0-9]{8,11}" placeholder="ingrese No. de ISBN" autofocus name="inputIsbn">
             </div>
             <div class="mb-3">
             <label>TITULO</label>
@@ -23,7 +23,7 @@
             <input class="form-control" type="text" placeholder="ingrese genero" name="inputGenero">
             </div>
             <input type="hidden" name="idButton" value="1"/>
-            <input type="submit" class="btn btn-info" value="Guardar"/>
+            <input type="submit" class="btn btn-info" value="Guardar" href="../index.php "/>
             <button type="button" class="btn btn-info"><a href="../index.php" class="link-light">Salir</a></button>
           </form>
       </div>
