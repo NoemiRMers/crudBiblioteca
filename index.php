@@ -20,17 +20,16 @@
         </thead>
         <tbody>
           <?php
-          //<?php include 'templates/footer.php' 
             foreach($libro as $dato){
           ?>
           <tr class="table-light">
-            <td><?php echo $dato->isbn ?></td>
-            <td><?php echo $dato->titulo ?></td>
-            <td><?php echo $dato->autor ?></td>
-            <td><?php echo $dato->genero ?></td>
+            <td scope="row"><?php echo $dato->isbn; ?></td>
+            <td><?php echo $dato->titulo; ?></td>
+            <td><?php echo $dato->autor; ?></td>
+            <td><?php echo $dato->genero; ?></td>
             <td>
                 <button type="button" class="btn btn-info"><a href="manage/editar.php?isbn=<?php echo $dato->isbn ?>" class="link-light">Editar</a></button>
-                <button type="button" class="btn btn-info"><a href="manage/editar.php?isbn=<?php echo $dato->isbn ?>" class="link-light">Eliminar</a></button>
+                <button type="button" class="btn btn-info"><a href="manage/eliminar.php?isbn=<?php echo $dato->isbn ?>" class="link-light">Eliminar</a></button>
             </td>
           </tr>
           <?php
@@ -50,4 +49,4 @@
     </div>
   </div>
 </div>
-
+<?php include 'templates/footer.php' ?>
