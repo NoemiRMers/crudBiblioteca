@@ -1,15 +1,15 @@
 <?php include '../templates/header.php' ?>
 <?php
-    //VALIDACION si los valores recibidos via POST estan vacios
+    //check if values are empty
     if(empty($_POST['inputTitulo']) || empty($_POST['inputAutor']) || empty($_POST['inputGenero'])){
     ?>
-    <!--MENSAJE DE ALERTA-->
+    <!--ALERT MESSAGE-->
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-7">
                 <div class="alert alert-warning alert-dismissible show" role="alert">
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-                        <strong>ERROR AL GUARDAR CAMBIOS. NO PUEDES DEJAR ESPACIOS VACIOS</strong>
+                        <strong>ERROR. NO PUEDES DEJAR ESPACIOS VACIOS</strong>
                     </button>
                     <button type="button" class="btn btn-info"><a href="../index.php" class="link-light">Regresar</a></button>
                 </div>
